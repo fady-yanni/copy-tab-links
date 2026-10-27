@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Copy Tab Links",
+  "version": "1.0.0",
+  "description": "Copy the links of all selected tabs, one per line. Private, offline, sends nothing anywhere.",
+  "permissions": ["tabs", "offscreen", "clipboardWrite"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Copy links of selected tabs"
+  },
+  "commands": {
+    "copy-links": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+C",
+        "mac": "Command+Shift+C"
+      },
+      "description": "Copy links of selected tabs"
+    }
+  }
+}
